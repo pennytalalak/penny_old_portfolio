@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<title>Residence Design</title>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<link rel="stylesheet" href="styling.css"/>
+
+<!-- Jquery -->
+<script src="jquery-3.2.1.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+<link href="bootstrap.css" rel="stylesheet"/>
+<link href="bootstrap-responsive.css" rel="stylesheet"/>
+
+<!-- Scroll Reveal.js -->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<!-- Lightbox -->
+<script type="text/javascript" src="lightbox.js"></script>
+<link href="lightbox.css" rel="stylesheet"/>
+
+<!--Tooltip-->
+<link rel="stylesheet" type="text/css" href="tooltipster.bundle.min.css"/>
+<link rel="stylesheet" type="text/css" href="tooltipster-sideTip-punk.min.css"/>
+<script type="text/javascript" src="tooltipster.bundle.min.js"></script>
+<script>
+$(document).ready(function() {
+           $('.tooltip').tooltipster();
+       });
+</script>
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="navbar w3-top">
+    <div class="w3-bar w3-white w3-padding" style="letter-spacing:4px;">
+      <a href="#home" class="w3-bar-item w3-button"><b>CODE1240 REAL-TIME ENVIRONMENT</b></a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#inspiration" class="w3-bar-item w3-button">Inspiration</a>
+        <a href="#precedent" class="w3-bar-item w3-button">Precedent</a>
+        <a href="#plans" class="w3-bar-item w3-button">Plans</a>
+        <a href="#elevations" class="w3-bar-item w3-button">Elevations</a>
+        <a href="#sections" class="w3-bar-item w3-button">Sections</a>
+
+      </div>
+    </div>
+</div>
+
+<!-- Main Video -->
+<section class="render">
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+    <div class="video">
+      <video width=100% autoplay loop id="video">
+      <source src="renders.mp4" type="video/mp4" />
+      </video>
+      <div class="w3-display-left w3-padding-large w3-opacity w3-white">
+        <h1 class="w3-xxlarge">Residential Design</h1>
+        <br>
+        <h4> 78 Lardelli Drive, Ryde NSW 2112 </h4>
+        </br>
+    </div>
+  </header>
+</section>
+
+<!-- Inspirations -->
+<section id="inspiration">
+
+  <h1 class='w3-padding-64 w3-margin-left page-header inspoHead'>Inspiration: The Grand Budapest Hotel</h1>
+
+  <div class="container">
+    <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 inspo1 ">
+          <a href="images/1.png" data-lightbox="image" data-title="The Grand Budapest Hotel"><img src="images/1thumb.png" alt="Main">
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 inspo2 ">
+          <a href="images/2draw.jpg" data-lightbox="image" data-title="Exploring levels: Elevator Scene 1">
+            <img src="images/2thumb.jpg" alt="Elevator1">
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 inspo3">
+          <a href="images/3draw.jpg" data-lightbox="image" data-title="Exploring levels: Elevator Scene 2"><img src="images/3thumb.jpg" alt="Elevator2">
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 inspo4 ">
+          <a href="images/4draw.jpg" data-lightbox="image" data-title="Exploring levels: Store Room Scene"><img src="images/4thumb.jpg" alt="Elevator3">
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 inspo5 ">
+          <a href="images/5draw.jpg" data-lightbox="image" data-title="Exploring symmetry: Train Scene"><img src="images/5thumb.jpg" alt="Interior">
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 inspo6 ">
+          <a href="images/6draw.jpg" data-lightbox="image" data-title="Exploring symmetry: Dining with Madame D Scene"><img src="images/6thumb.jpg" alt="Reception">
+          </a>
+        </div>
+
+    </div> <!-- row -->
+  </div> <!-- container -->
+
+</section>
+
+<!-- Precedent -->
+<section id="precedent">
+  <h1 class='w3-padding-64 w3-margin-left page-header preHead'>Precedent</h1>
+    <div class="row">
+      <div class="col-sm-9">
+        <img id="zaha" class="zahaLeft" src="images/zaha.jpg"/>
+      </div>
+      <div class="col-sm-3 zahaRight">
+        <h3>Heydar Aliyev Center</h3>
+        <br/>
+        <h4><b>Architect:</b></h4>
+        <p>Zaha Hadid Architects</p>
+        <br/>
+        <h4><b>Design:</b></h4>
+        <p>Zaha Hadid, Patrik Schumachers</p>
+        <br/>
+        <h4><b>Project Year:</b></h4>
+        <p>Zaha Hadid Architects</p>
+        <br/>
+        <h4><b>Location:</b></h4>
+        <p>Baku, Azerbaijan</p>
+        <br/>
+        <h4><b>Client:</b></h4>
+        <p>The Republic of Azerbaijan</p>
+      </div>
+    </div>
+</section>
+
+<!-- Plans -->
+<section class="plansection" id="plans">
+  <h1 class='w3-padding-64 w3-margin-left page-header planHead'>Plans</h1>
+
+  <div class="row">
+    <div class="divideplan">
+
+      <!-- First Floor -->
+      <div class="col-sm-6 contain firstfl">
+        <h3 class="text_1"> First Floor </h3>
+        <img id="firstfloor" src="floorplan/1.jpg"/>
+
+        <svg class="floorSVG1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 1152 648" style="enable-background:new 0 0 1152 648;" xml:space="preserve">
+
+        <g id="border">
+        	<polygon class="fil0" points="2,-1 1154,-1 1154,648 -1,648 	"/>
+        </g>
+        <g id="living_1_">
+        	<path id="living_1" class="fil1 tooltip" title="Living Room" d="M920.4,223.9l3.4,252.2c0,0,2.5,30.9-8.3,46.1c-7.9,11.1-26.5,15.3-54.2,15.3c-73.9,0-115,0-115,0
+        		v-318c0,0-1.1-2.7,12-2.7S920.4,223.9,920.4,223.9z"/>
+        </g>
+        <g id="main_1_">
+        	<polygon id="main_1" class="fil1 tooltip" title="Main Hall" points="406.3,274.2 406.3,418 741.1,418 741.1,219.8 573.7,129 415.6,223.1 415.6,262.2 	"/>
+        </g>
+        <g id="dining_1_">
+        	<path id="dining_1" class="fil1 tooltip" title="Dining + Kitchen" d="M403,273.9v263.6c0,0-170.2,19.2-170.2-35.9V315.3c0,0-3.3-81.2,94.6-71.7
+        		c41.2,3.9,62.8,9.5,62.8,9.5s2.8,12.2,6.1,12.8S403,273.9,403,273.9z"/>
+        </g>
+        <g id="laundry_1_">
+        	<path id="laundry_1" class="fil1 tooltip" title="Laundry" d="M593.8,422H406.3v115.3c0,0,83.8,5.2,79.3-44.6c0,0,0.9-6.1-14.9-17c-18.7-12.9,6.6-27,14.9-12.9
+        		c8.3,14.1,68,37.3,108.2,31.5V422z"/>
+        </g>
+        <g id="toilet_1_">
+        	<path id="toilet_1" class="fil1 tooltip" title="Toilet" d="M601.7,484v-62h138.7v115.3c0,0-49.5-1.5-61.5-8.9c0,0,12.9-3.3,21.9-13
+        		c8.7-9.4,17.2-20.3,15.6-39.1c-0.7-7.8-8-15.6-36.3-1.9s-78.4,19.6-78.4,19.6V484z"/>
+        </g>
+        <g id="garden_1_">
+        	<path id="garden_1" class="fil1 tooltip" title="Garden" d="M124,417h21v-95h61l3-4c0,0-5-32-4-43s-1-43,11-50s41-19,49-21s24-9,50-10s53,3,53,3l18,4c0,0-2-19,5-32
+        		s6-20,18-29s12-9,12-9H126L124,417z"/>
+        </g>
+        </svg>
+
+      </div>
+
+      <!-- Second Floor -->
+      <div class="col-sm-6 secondfl">
+        <h3 class="text_1"> Second Floor </h3>
+        <img id="secondfloor" src="floorplan/2.jpg"/>
+
+        <svg class="floorSVG2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 1152 648" style="enable-background:new 0 0 1152 648;" xml:space="preserve">
+        <g id="border">
+        	<path class="fil0" d="M0,0c384,0,768,0,1152,0v648H0V0z"/>
+        </g>
+        <g id="office">
+        	<path id="office_2" class="fil1 tooltip" title="Office" d="M623.7,425H786v70.7H624.7C624.7,495.7,624.2,424.5,623.7,425z"/>
+        </g>
+        <g id="balcony">
+        	<path id="balcony_2" class="fil1 tooltip" title="Balcony" d="M118.7,424.7h498.7v70.7H121.8C121.8,495.3,120.2,424.2,118.7,424.7z"/>
+        </g>
+        </svg>
+
+      </div>
+
+    </div>
+
+      <!-- Third Floor -->
+      <div class="col-sm-6 thirdfl">
+        <h3 class="text_1"> Third Floor </h3>
+        <img id="thirdfloor" src="floorplan/3.jpg"/>
+
+        <svg class="floorSVG3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 1152 648" style="enable-background:new 0 0 1152 648;" xml:space="preserve">
+
+        <g id="border">
+        	<rect x="1" y="1" class="fil0" width="1152" height="647"/>
+        </g>
+        <g id="toilet">
+        	<path id="toilet_3" class="fil1 tooltip" title="Bathroom" d="M364,378.3v58l2,1.5l57.5-1c0,0-11.3-26.5-21.5-35.3S381.3,385,374,382S364,378.3,364,378.3z"/>
+        </g>
+        <g id="bedroom1">
+        	<path id="bedroom_3" class="fil1 tooltip" title="Bedroom" d="M314.3,325.8l-0.7,37.6c0,0-48.2,33.9-38.8,86.5s39.7,57.5,61.5,61.1s60.4,7.6,82.1-8.5
+        		c15.7-11.6,21-30.1,12.8-63.9l-71.2,0.8v-71.6l-1.1-42.3L314.3,325.8z"/>
+        </g>
+        <g id="library">
+        	<polygon id="library_3" class="fil1 tooltip" title="Cinema Library" points="469.3,302.7 613.7,302.7 613.7,459.3 525.9,459.3 525.9,521 469,521 	"/>
+        </g>
+        </svg>
+      </div>
+
+      <!-- Fourth Floor -->
+      <div class="col-sm-6 fourthfl">
+        <h3 class="text_1"> Fourth Floor </h3>
+        <img id="fourthfloor" src="floorplan/4.jpg"/>
+
+        <svg class="floorSVG4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 1152 648" style="enable-background:new 0 0 1152 648;" xml:space="preserve">
+          <g id="border">
+        	<path class="fil0" d="M1150,1v647H1V0C1,0,1153,1,1150,1z"/>
+        </g>
+        <g id="veranda">
+        	<rect x="472.5" y="387" id="veranda_4" class="fil1 tooltip" title="Veranda" width="220.5" height="139"/>
+        </g>
+        <g id="ensuite">
+        	<path id="ensuite_4" class="fil1 tooltip" title="Master Bedroom" d="M435.3,302c0,0,10.7,59.5,46.2,80.5H655c0,0,43-33,37-83.5s-57.5-74-57.5-74L602,214.5v55h-61.8v31L435.3,302z
+        		"/>
+        </g>
+        <g id="bathroom">
+        	<path id="bathroom_4" class="fil1 tooltip" title="Ensuite Bathroom" d="M481.5,221v44.5H599v-52C599,213.5,535.5,201,481.5,221z"/>
+        </g>
+        </svg>
+      </div>
+  </div>
+
+</section>
+
+<!-- Elevations -->
+<section id="elevations">
+  <h1 class='w3-padding-64 w3-margin-left page-header elevationHead'>Elevations</h1>
+
+  <div id="margin" class="row">
+    <!-- Elevations Image -->
+    <div class="place col-sm-8">
+      <img id="white" src="elevations/white.jpg"/>
+      <!--List: Elevations Images -->
+        <img id="front" src="elevations/front.jpg"/>
+        <img id="enlarge1" src="elevations/frontinner.jpg"/>
+        <img id="back" src="elevations/back.jpg"/>
+        <img id="left" src="elevations/left.jpg"/>
+        <img id="right" src="elevations/right.jpg"/>
+    </div>
+
+    <!--Buttons-->
+    <div class="col-sm-4">
+      <div class="buttonPad">
+
+        <div class="btn -salmon -size butt1">
+          <h3 id="frontButton">Front Elevation</h3>
+        </div>
+
+        <div class="btn -salmon -size butt2">
+          <h3 id="backButton">Back Elevation</h3>
+        </div>
+
+        <div class="btn -salmon -size butt3">
+          <h3 id="leftButton">Left Elevation</h3>
+        </div>
+
+        <div class="btn -salmon -size butt4">
+          <h3 id="rightButton">Right Elevation</h3>
+        </div>
+
+      </div>
+    </div>
+
+    <!--Showing Inside Elevation -->
+    <div class="marginImages">
+      <div class="col-sm-6 inner1">
+        <img class="xyz" data-alt-src="elevations/frontinner.jpg" src="elevations/front.jpg" />
+      </div>
+
+      <div class="col-sm-6 inner2">
+        <img class="xyz" data-alt-src="elevations/backinner.jpg" src="elevations/back.jpg" />
+      </div>
+
+      <div class="col-sm-6 inner3">
+        <img class="xyz" data-alt-src="elevations/leftinner.jpg" src="elevations/left.jpg" />
+      </div>
+
+      <div class="col-sm-6 inner4">
+        <img class="xyz" data-alt-src="elevations/rightinner.jpg" src="elevations/right.jpg" />
+      </div>
+
+  </div>
+
+  </div>
+
+</section>
+
+<!-- Sections -->
+<section class="section-title" id="sections">
+  <h1 class="secHead">Sections</h1>
+
+    <div class='sectionDisplay'>
+      <img class="sectionImage" src="section_render.jpg"/>
+
+        <svg class="svgFile image-expand-link" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+        <style type="text/css">
+        	.st0{fill:#F2F2F2;}
+        	.st1{fill:#FFFFFF;}
+        </style>
+        <g id="dining">
+        	<path id="din" class="st0 tooltip" title="Dining" d="M1334,972V776h320.2c0,0,15.2,43.4,23.4,84.9c8.1,41.4,16.3,69.7,20.3,86.9c4.1,17.2,4.1,22.2,4.1,22.2
+        		S1332.7,970.7,1334,972z"/>
+        </g>
+        <g id="laundry">
+        	<path id="lau" class="st0 tooltip" title="Laundry" d="M1160,776h167v194h-167C1160,970,1160,773.4,1160,776z"/>
+        </g>
+        <g id="living">
+        	<path id="liv" class="st0 tooltip" title="Living" d="M259,723v248l358,2V776.1H513.8v-13.3h51.6c0,0-1-17.3,0-19.4c1-2,1-7.1,1-7.1s-58.7-1.6-88.5,1.5
+        		c-44.2,4.6-71.1,17.9-103.7,16.8c-26-0.9-57.4-2.7-80.9-15.3C276.2,730.1,259,723,259,723z"/>
+        </g>
+        <g id="office">
+        	<path id="off" class="st0 tooltip" title="Office" d="M632.4,615H862v149H615c0,0,4.6-3.6,4.6-9.7s2-59.2,4.1-76.5C625.7,660.4,632.4,615,632.4,615z"/>
+        </g>
+        <g id="library">
+        	<rect x="876" y="382" id="lib" class="st0 tooltip" title="Cinema Library" width="300" height="152"/>
+        </g>
+        <g id="masterbed">
+        	<path id="mas" class="st0 tooltip" title="Master Bedroom" d="M697,369c0,0,552,0,552,0c-16.9-53.9-39.7-110.1-73.8-155.6c-19.7-26.2-46.8-52.3-74.7-69.6
+        		C1057.2,117,992.3,106.2,943,121c-44.5,13.4-82.3,35.4-117.3,66c-33.3,29.1-65.4,66.9-86.1,106c-13,24.4-27.3,43.3-39.6,68
+        		C699.9,361.2,697.2,369,697,369z"/>
+        </g>
+        <g id="minibed">
+        	<path id="min" class="st0 tooltip" title="Bedroom" d="M1396,383h106v128h-106C1396,511,1396,381.3,1396,383z"/>
+        </g>
+        <g id="toilet">
+        	<polygon id="toi" class="st0 tooltip" title="Toilet" points="624,776 921,776 921,971 625,971 	"/>
+        </g>
+        <g id="boundaries">
+        	<path class="st0" d="M13,1074"/>
+        	<g>
+        		<path class="st1" d="M1921,1v1078H3V1H1921 M1922,0H2v1080h1920V0L1922,0z"/>
+        	</g>
+        </g>
+      </svg>
+    </div>
+
+</section>
+
+<div class="finalrender">
+  <img src="day_render.jpg" width="100%"/>
+</div>
+
+
+<script type="text/javascript" src="scripting.js"></script>
+<script type="text/javascript" src="reveal_animation.js"></script>
+
+
+</body>
+
+
+</html>
