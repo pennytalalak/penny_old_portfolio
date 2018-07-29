@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Urban Modelling</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+
+<!--Jquery -->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<!--Bootstrap-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+<!--ScrollReveal-->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<!--Mapbox-->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.css' rel='stylesheet' />
+
+<!--Leaflet -->
+<link rel="stylesheet" href="leaflet/leaflet.css" />
+<script src="leaflet/leaflet.js"></script>
+<script src="location.geojson"></script>
+
+<!-- Lightbox -->
+<script type="text/javascript" src="lightbox/lightbox.js"></script>
+<link href="lightbox/lightbox.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav class="nav">
+  <div class="burger">
+    <div class="burger__patty"></div>
+  </div>
+
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a href="#problem" class="nav__link c-blue"><i class="fa fa-question-circle"></i>
+      <p class="navtxt"><b>Problems</b></p></a>
+
+    </li>
+    <li class="nav__item">
+      <a href="#solution" class="nav__link c-yellow scrolly"><i class="fa fa-lightbulb-o"></i>
+      <p class="navtxt"><b>Solutions</b></p></a>
+    </li>
+    <li class="nav__item">
+      <a href="#architecture" class="nav__link c-green"><i class="fa fa-building"></i>
+      <p class="navtxt"><b>Architecture</b></p></a>
+    </li>
+    <li class="nav__item">
+      <a href="#siteanalysis" class="nav__link c-red"><i class="fa fa-map-marker"></i>
+      <p class="navtxt"><b>Site Analysis</b></p></a>
+    </li>
+    <li class="nav__item">
+      <a href="#siteplan" class="nav__link c-green"><i class="fa fa-map"></i>
+      <p class="navtxt"><b>Site Plan</b></p></a>
+    </li>
+    <li class="nav__item">
+      <a href="#drawings" class="nav__link c-red"><i class="fa fa-pencil"></i>
+      <p class="navtxt"><b>Drawings</b></p></a>
+    </li>
+    <li class="nav__item">
+      <a href="#sections" class="nav__link c-yellow"><i class="fa fa-cubes"></i>
+      <p class="navtxt"><b>Sections</b></p></a>
+    </li>
+    <li class="nav__item">
+      <a href="#renders" class="nav__link c-blue"><i class="fa fa-file-image-o"></i>
+      <p class="navtxt"><b>Renders</b></p></a>
+    </li>
+  </ul>
+</nav>
+
+<!--Problem -->
+<section class="panel b-blue" id="problem">
+  <article class="panel__wrapper">
+    <div class="">
+      <h1 class="panel__headline"><i class="fa fa-question-circle c-blue"></i>&nbsp;Problem</h1>
+      <div class="panel__block"></div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p>After analysing the ABS statistic on NSW high school graduation rate by age and gender,
+            the problem arose when there is a drastic gap between the North Sydney/CBD area and
+            Western Sydney. Through the investigation of locating private school around NSW, it is
+            evident that top 10 school in NSW are mostly above the "Latte Line".
+            We believe that education should be equally disperse throughout NSW through better teaching and environment.
+        </div>
+
+        <div class="col-sm-6">
+          <video width="100%" autoplay loop>
+            <source src="vid/sydney.mp4" width="100%" type="video/mp4">
+          </video>
+          <center><p3><i>Chloropleth showing the change in high school graduate rate over 77 years</i></p3></center>
+        </div>
+      </div>
+
+
+      <div class="latte_wrapper">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="lattevidscroll">
+            <video class="lattevid" width="100%">
+              <source src="vid/latte.mp4" type="video/mp4">
+            </video>
+          </div>
+          </div>
+
+          <div class="col-sm-4 text1">
+            <p> Below shows the division of NSW high school graduation rate.
+              It is evident that North Sydney and Sydney CBD region are the most to produce graduate rate,
+            leaving the South West and Western Sydney a gap for an improvement</p>
+            <center>
+              <button class="latteBtn">
+              Latte Line
+              </button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!--Solution -->
+<section class="panel b-red" id="solution">
+
+    <article class="panel__wrapper">
+
+        <h1 class="panel__headline"><i class="fa fa-lightbulb-o c-yellow"></i>&nbsp;Solution</h1>
+        <div class="panel__block"></div>
+          <h2><b>Tri-Eskola: A Multifunctional Hub</b></h2>
+
+          <img id="" src="img/solution.jpg" width="100%"/>
+
+    </article>
+</section>
+
+
+<!--Architecture -->
+<section class="panel b-red" id="architecture">
+
+    <article class="panel__wrapper">
+
+        <h1 class="panel__headline"><i class="fa fa-building c-green"></i>&nbsp;Architecture</h1>
+        <div class="panel__block"></div>
+
+
+          <img id="texthold" src="img/texthold.jpg" width="100%"/>
+        </div>
+        <div class="des">
+          <p><i>Tri-Eskola</i> is a multifunctional educational hub that facilitates both students, teachers and staffs.
+            The hub contains a school that is selective for HSC students only, a teacher training centre and a boarding house for
+            students.
+          </p>
+        </br>
+          <p>
+            With the benefit of locating circumferentially around the Whitlam Leisure Centre, both the public users, students
+            and teachers are allowed to interact between an intensed academic environment and the recreational space.
+          </p>
+      </div> <!--paragraph des-->
+
+
+
+    <!-- Description of each building -->
+    <div class="explanation">
+
+      <!-- Description for Teaching -->
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="desmargin">
+            <h2><b>Teacher Training Centre</b></h2>
+            <p>Better education not only comes from the willingness to learn of the individual
+              but also the quality of teaching being delivered. The Training Centre trains teachers to
+              perform well in class as well as developing interpersonal skills for better relationships
+              between students and teachers. </p>
+            </br>
+            <p>Teacher Training Centre comprises meeting rooms, a lecture theatre, a food court and
+            workshop areas.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <img src="img/teaching_pers.jpg" width=500px;/>
+        </div>
+      </div> <!--div row -->
+
+
+<!-- Description for Boarding -->
+      <div class="desmargin2">
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="flipimg" src="img/boarding_pers1.jpg" width=500px;/>
+        </div>
+
+        <div class="col-sm-8">
+          <div class="desmargin">
+            <h2><b>The Boarding House</b></h2>
+            <p>The boading house facilitates students who face difficulties in travelling
+              to and from home. This eliminates discrimination for students who
+              travel long distances and allows them to experience quality education and welcoming facilities.</p>
+            </br>
+            <p>The boarding house comprises 2 towers, separately
+              for males and females, a dining hall, a common room, and bathrooms.</p>
+          </div>
+        </div>
+      </div> <!--div row -->
+    </div> <!--div desmargin2 -->
+
+
+    <!-- Description for School -->
+    <div class="desmargin2">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="desmargin">
+          <h2><b>Whitlam College</b></h2>
+          <p>Whitlam College, named after the Whitlam Leisure Centre, offers quality HSC
+            education for senior students. Taught by well-trained teachers, students are supported
+            towards better results and prepared for the real world. As a result, high
+            school graduate rates should dramatically increase in the next 40 years. </p>
+          </br>
+          <p>Whitlam College comprises of classrooms, specifically for HSC subjects,
+            FABLAB workshop, a music room, meeting rooms, an assembly hall, a food court, and an in-house office.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="img/school_pers.jpg" width=500px/>
+      </div>
+    </div> <!--div row -->
+    </div> <!--div desmargin2 -->
+
+    <!-- Description for Ring -->
+          <div class="desmargin2">
+          <div class='row'>
+            <div class='col-sm-12'>
+            <div class="desmargin">
+              <h2><b>The Whitlam Ring</b></h2>
+              <p>The Whitlam Ring serves as a mean for travelling between each tower.
+                Locating the journey on top instead of the ground prevents the
+              deconstruction of land and forest surrounded. Whilst presenting a very
+            open space for students as a recreational space, the ring holds a simple
+            railed pod system to escort from one tower to another.</p>
+              </br>
+              <p>Ultimately, the ring has the ability to translate up and down on each towers,
+                in order to create shade for the Whitlam Leisure Centre according to the sun's direction.</p>
+            </div><!--div desmargin -->
+          </div><!--div col-sm-12 -->
+        </div><!--div row -->
+
+            <div class="ringwrapper">
+              <div class="ring">
+              <img src="img/ring.jpg" width=100%/>
+              </div>
+            </div>
+
+
+        </div> <!--div desmargin2 -->
+  </div> <!--div explanation -->
+  </article>
+</section>
+
+<!--Site Analysis -->
+<section class="panel b-red siteanalysis" id="siteanalysis">
+  <article class="panel__wrapper">
+
+      <h1 class="panel__headline"><i class="fa fa-map-marker c-red"></i>&nbsp;Site Analysis</h1>
+      <div class="panel__block"></div>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <p> From "Directions for a Greater Sydney 2017-2056" by the Greater Sydney Commission,
+            it is predicted that the next global metropolis of three productive, liveable and sustainable
+            cities are Western Parkland City, Central River City and Eastern Harbour City.</p>
+          </br>
+          <p> Due to a high rise populated area in the Sydney City region, there is an opportunity
+            for the Parramatta area and Western Sydney to become the next CBD with the airport
+            being currently in progress.</p>
+          </br>
+          <p>It is evident that investment in education will be shifting towards Western Sydney,
+            however there is still a significant gap in the South West area.</p>
+        </div>
+
+        <div class="col-sm-4 ">
+          <img src="img/map.jpg" id="mapblow" width="95%" />
+          <img id="colourmap" src="img/colourmap.jpg"/ width="95%">
+        </div>
+      </div>
+  </article>
+</section>
+
+<!--Site Plan-->
+<section class="panel b-green content1" id="siteplan">
+  <article class="panel__wrapper">
+
+
+      <!-- Paragraph -->
+      <div id="word">
+        <h1 class="panel__headline"><i class="fa fa-map c-green"></i>&nbsp;Site Plan</h1>
+        <div class="panel__block"></div>
+        <p>Liverpool has been chosen as a locating site for <i>Tri-Eskola</i>. This is due to
+        Liverpool being proximity to the Greater Parramatta, Western Sydney and 50 mins train to Sydney City.
+        The available space around The Whitlam Leisure Centre is suitable for locating <i>Tri-Eskola</i> where people can
+        retreat, recreate and relax after intensed education.</p>
+      </div>
+    </div>
+
+    <!-- Map Box -->
+    <div class="placemap">
+      <div id="map"></div>
+    </div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoicGVubnlwYW5nY29kZSIsImEiOiJjajZ2bjlwazkxNW10MzJvMzVidjNlcnExIn0.kxfe2U4_vp8dcb6dQdok2g';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center: [ 150.915158, -33.925152],
+    zoom: 15.5,
+    pitch: 40,
+    bearing: 20
+  });
+
+  map.on('load', function() {
+
+      map.addLayer({
+          'id': 'room-extrusion',
+          'type': 'fill-extrusion',
+          'source': {
+              // Geojson Data source used in vector tiles, documented at
+              // https://gist.github.com/ryanbaumann/a7d970386ce59d11c16278b90dde094d
+              'type': 'geojson',
+              'data': data
+          },
+          'paint': {
+              // See the Mapbox Style Spec for details on property functions
+              // https://www.mapbox.com/mapbox-gl-style-spec/#types-function
+              'fill-extrusion-color': {
+                  // Get the fill-extrusion-color from the source 'color' property.
+                  'property': 'color',
+                  'type': 'identity'
+              },
+              'fill-extrusion-height': {
+                  // Get fill-extrusion-height from the source 'height' property.
+                  'property': 'height',
+                  'type': 'identity'
+              },
+              'fill-extrusion-base': {
+                  // Get fill-extrusion-base from the source 'base_height' property.
+                  'property': 'base_height',
+                  'type': 'identity'
+              },
+              // Make extrusions slightly opaque for see through indoor walls.
+              'fill-extrusion-opacity': 0.9
+          }
+      });
+  });
+      </script>
+  </article>
+</section>
+
+
+<!--Drawings-->
+<section class="panel b-red" id="drawings">
+  <div class="mainsectionpage">
+    <article class="panel__wrapper">
+
+
+      <h1 class="panel__headline"><i class="fa fa-pencil c-red"></i>&nbsp;Drawings</h1>
+      <div class="panel__block"></div>
+  <center>
+
+      <h2 class="sections"> <b>Elevations</b> </h2>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="teachingwrap">
+            <img id="teaching"src="img/teaching_pers.jpg" width="95%"/>
+            <p id="stylelabel">Teaching</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="boardingwrap">
+            <img id="boarding"src="img/boarding_pers.jpg" width="95%"/>
+            <p id="stylelabel">Boarding</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="schoolwrap">
+            <img id="school"src="img/school_pers.jpg" width="95%"/>
+            <p id="stylelabel">School</p>
+          </div>
+        </div>
+      </div>
+    </center>
+  </div>
+
+    <!-- Teaching Section -->
+      <div class="teacher_page">
+        <article class="panel__wrapper">
+
+
+          <h1 class="panel__headline"><i class="fa fa-angle-double-left" id="backtoggle2"></i>&nbsp;Drawings: Training Centre</h1>
+          <div class="panel__block"></div>
+          <p3> *All measurements are in meters </p3>
+
+          <div class="pad">
+            <div class="showbottom">
+            <div class="row">
+
+              <div class="col-sm-6">
+                <div class="frontWrap">
+                  <img id="BfrontT" src="img/teaching_front.jpg"/>
+                  <img id="frontRenderT" src="img/teaching_front_render.jpg"/>
+                </div>
+                <center><p class="txtEle">Front</p></center>
+              </div>
+
+              <div class=" col-sm-6">
+                <div class="frontWrap">
+                  <img id="BbackT" src="img/teaching_back.jpg"/>
+                  <img id="backRenderT" src="img/teaching_back_render.jpg"/>
+                </div>
+                <center><p class="txtEle">Back</p></center>
+              </div>
+            </div>
+          </div> <!-- Div showbottom -->
+
+        <div class="showbottomT">
+            <div class="row">
+              <div class=" col-sm-6">
+                <div class="frontWrap">
+                  <img id="BleftT" src="img/teaching_left.jpg"/>
+                  <img id="leftRenderT" src="img/teaching_left_render.jpg"/>
+                </div>
+                <center><p class="txtEle">Left</p></center>
+              </div>
+
+              <div class=" col-sm-6">
+                <div class="frontWrap">
+                  <img id="BrightT" src="img/teaching_right.jpg"/>
+                  <img id="rightRenderT" src="img/teaching_right_render.jpg"/>
+                </div>
+                <center><p class="txtEle">Right</p></center>
+              </div>
+            </div> <!--div row -->
+          </div>
+
+          </div> <!-- Div Pad -->
+
+        </article>
+      </div> <!-- Ending Teaching Page -->
+
+    <!-- Boarding Section -->
+      <section class="" id="drawings">
+        <div class="boarding_page">
+          <article class="panel__wrapper">
+
+
+            <h1 class="panel__headline"><i class="fa fa-angle-double-left" id="backtoggle"></i>&nbsp;Drawings: Boarding House</h1>
+            <div class="panel__block"></div>
+            <p3> *All measurements are in meters </p3>
+
+            <div class="pad">
+              <div class="showbottom">
+              <div class="row">
+
+                <div class="col-sm-6">
+                  <div class="frontWrap">
+                    <img id="Bfront" src="img/boarding_front.jpg"/>
+                    <img id="frontRender" src="img/boarding_front_render.jpg"/>
+                  </div>
+                  <center><p class="txtEle">Front</p></center>
+                </div>
+
+                <div class=" col-sm-6">
+                  <div class="frontWrap">
+                    <img id="Bback" src="img/boarding_back.jpg"/>
+                    <img id="backRender" src="img/boarding_back_render.jpg"/>
+                  </div>
+                  <center><p class="txtEle">Back</p></center>
+                </div>
+              </div>
+            </div> <!-- Div showbottom -->
+
+          <div class="showbottom">
+              <div class="row">
+                <div class=" col-sm-6">
+                  <div class="frontWrap">
+                    <img id="Bleft" src="img/boarding_left.jpg"/>
+                    <img id="leftRender" src="img/boarding_left_render.jpg"/>
+                  </div>
+                  <center><p class="txtEle">Left</p></center>
+                </div>
+
+                <div class=" col-sm-6">
+                  <div class="frontWrap">
+                    <img id="Bright" src="img/boarding_right.jpg"/>
+                    <img id="rightRender" src="img/boarding_right_render.jpg"/>
+                  </div>
+                  <center><p class="txtEle">Right</p></center>
+                </div>
+              </div> <!--div row -->
+            </div> <!-- div showbottom -->
+            </div> <!-- Div Pad -->
+
+          </article>
+        </div> <!-- Ending Boarding Page -->
+      </section>
+
+      <!-- School Section -->
+        <section class="" id="drawings">
+          <div class="school_page">
+            <article class="panel__wrapper">
+
+
+              <h1 class="panel__headline"><i class="fa fa-angle-double-left" id="backtoggle3"></i>&nbsp;Drawings: Whitlam School</h1>
+              <div class="panel__block"></div>
+              <p3> *All measurements are in meters </p3>
+
+              <div class="pad">
+                <div class="showbottom">
+                <div class="row">
+
+                  <div class="col-sm-6">
+                    <div class="frontWrap">
+                      <img id="BfrontS" src="img/school_front.jpg"/>
+                      <img id="frontRenderS" src="img/school_front_render.jpg"/>
+                    </div>
+                    <center><p class="txtEle">Front</p></center>
+                  </div>
+
+                  <div class=" col-sm-6">
+                    <div class="frontWrap">
+                      <img id="BbackS" src="img/school_back.jpg"/>
+                      <img id="backRenderS" src="img/school_back_render.jpg"/>
+                    </div>
+                    <center><p class="txtEle">Back</p></center>
+                  </div>
+                </div>
+              </div> <!-- Div showbottom -->
+
+            <div class="showbottom">
+                <div class="row">
+                  <div class=" col-sm-6">
+                    <div class="frontWrap">
+                      <img id="BleftS" src="img/school_left.jpg"/>
+                      <img id="leftRenderS" src="img/school_left_render.jpg"/>
+                    </div>
+                    <center><p class="txtEle">Left</p></center>
+                  </div>
+
+                  <div class=" col-sm-6">
+                    <div class="frontWrap">
+                      <img id="BrightS" src="img/school_right.jpg"/>
+                      <img id="rightRenderS" src="img/school_right_render.jpg"/>
+                    </div>
+                    <center><p class="txtEle">Right</p></center>
+                  </div>
+                </div> <!--div row -->
+              </div> <!-- div showbottom -->
+              </div> <!-- Div Pad -->
+
+            </article>
+          </div> <!-- Ending School Page -->
+        </section>
+
+
+  </article>
+</section>
+
+
+<!--Sections-->
+<section class="panel b-blue" id="sections">
+  <article class="panel__wrapper">
+
+    <div class="beforeplan">
+      <h1 class="panel__headline"><i class="fa fa-cubes c-yellow"></i>&nbsp;Sections</h1>
+      <div class="panel__block"></div>
+
+
+      <div class="row">
+        <div class="col-sm-4">
+            <center><h3><b>Boarding House</b></h3></center>
+            <img class="abc" data-alt-src="img/Bsect.jpg" src="img/Bori.jpg" width="95%"/>
+        </div>
+
+        <div class="col-sm-4">
+            <center><h3><b>Teacher Training</b></h3></center>
+            <img class="abc" data-alt-src="img/Tsect.jpg" src="img/Tori.jpg" width="95%"/>
+        </div>
+
+
+        <div class="col-sm-4">
+            <center><h3><b>School</b></h3></center>
+            <img class="abc" data-alt-src="img/Ssect.jpg" src="img/Sori.jpg" width="95%"/>
+        </div>
+      </div> <!-- div row -->
+
+      <div class="click">
+        <center><button id="fullplan" class="latteBtn">FULL PLAN</button></center>
+      </div>
+    </div>
+
+      <div class="fullplanpage">
+        <img src="img/leftarrow.png" id="backtoggle4" width="50px"/>
+        <img src="img/lebel.jpg" width=100%/>
+      </div>
+
+  </article>
+</section>
+
+<!--Renders-->
+<section class="panel b-blue" id="renders">
+  <article class="panel__wrapper">
+    <div class="shiftleft">
+      <h1 class="panel__headline"><i class="fa fa-file-image-o c-yellow"></i>&nbsp;Renders</h1>
+      <div class="panel__block"></div>
+
+
+      <div clas="magnify">
+        <div class="large"></div>
+          <img class="small" id='moneyshot' src="img/moneyshot.jpg" width="100%"/>
+      </div>
+
+      <!--Lightbox -->
+      <div class="spacetop">
+      <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 inspo1 ">
+              <div id="one">
+              <a href="render/render1.jpg" data-lightbox="image" data-title="Top View"><img src="render/render1.jpg" width=100%>
+              </a>
+            </div>
+          </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 inspo1 ">
+              <div id="two">
+              <a href="render/render2.jpg" data-lightbox="image" data-title="Pod Rail"><img src="render/render2.jpg" width=100%>
+              </a>
+            </div>
+          </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 inspo1 ">
+              <div id="three">
+              <a href="render/render3.jpg" data-lightbox="image" data-title="The Ring"><img src="render/render3.jpg"  width=100%>
+              </a>
+            </div>
+          </div>
+        </div><!--div row-->
+
+        <!--Render Video-->
+        <div class="spacetop">
+        <video width=100% controls>
+          <source src="vid/render.mp4" type="video/mp4">
+        </video>
+      </div>
+
+        <div class="spacetop">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 inspo1 ">
+            <div id="two">
+            <a href="render/render6.jpg" data-lightbox="image" data-title="Boarding School Dining Hall"><img src="render/render6.jpg" width=100%>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 inspo1 ">
+          <div id="two">
+          <a href="render/render7.jpg" data-lightbox="image" data-title="School Assembly Hall"><img src="render/render7.jpg" width=100%>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 inspo1 ">
+        <div id="two">
+        <a href="render/render8.jpg" data-lightbox="image" data-title="Lecture Hall for Teacher Training"><img src="render/render8.jpg" width=100%>
+        </a>
+        </div>
+      </div>
+        </div>
+      </div>
+
+      </div> <!--div container -->
+    </div> <!--div spacetop-->
+  </div><!--div shiftleft-->
+
+    <div class="foot">
+      <center>
+        <p>By Eden Li and Penny Talalak</p>
+        <p>03 November 2017</p>
+        <p>CODE1230: Urban Data</p>
+      </center>
+    </div>
+
+  </article>
+</section>
+
+<!--Script-->
+  <script src="js/jquery.drawsvg.min.js"></script>
+  <script  src="js/walkway.min.js"></script>
+  <script  src="js/script.js"></script>
+  <script  src="js/blowup.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('#mapblow').blowup();
+    $('#colourmap').blowup();
+    $('#moneyshot').blowup();
+      });
+  </script>
+
+</body>
+</html>
