@@ -1,0 +1,52 @@
+body{
+  font-family: 'Raleway', san-serif;
+}
+.sectionImage{
+  position: absolute;
+  width: 100%;
+}
+
+.sectionTop{
+  position: absolute;
+  width: 100%;
+}
+
+#s_one,
+#s_two,
+#s_three,
+#s_four,
+#s_five,
+#s_six,
+#s_seven,
+#s_eight,
+#s_nine{
+  cursor: pointer;
+  opacity: 0;
+}
+
+#h_one,
+#h_two,
+#h_three,
+#h_four,
+#h_five,
+#h_six,
+#h_seven,
+#h_eight,
+#h_nine{
+  cursor: pointer;
+  opacity: 0;
+}
+
+#l_one,
+#l_two,
+#l_three,
+#l_four,
+#l_five,
+#l_six,
+#l_seven,
+#l_eight,
+#l_nine,
+#l_ten{
+  cursor: pointer;
+  opacity: 0;
+}
