@@ -1,0 +1,92 @@
+#beaker{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+}
+
+#conicalflask{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+}
+
+#bunsen{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+  width: 70px;
+}
+
+#burette{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+  width: 90px;
+}
+
+#condenser{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+  width: 40px;
+}
+
+#ebalance{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+  width: 120px;
+}
+
+#funnel{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+}
+
+#hotplate{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+}
+
+#pipette{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+  width: 100px;
+}
+
+#retort{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+  width: 300px;
+}
+
+#roundflask{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+}
+
+#tripod{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+  width: 150px;
+}
+
+#volumetricflask{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+  width: 150px;
+}
+
+#waterbath{
+  cursor: move;
+  display: inline;
+  margin-right: 30px;
+  width: 150px;
+}
