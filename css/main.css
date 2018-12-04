@@ -177,6 +177,7 @@ h6 {
 }
 b {
     font-weight: 900;
+    font-family: 'Lekton', sans-serif !important;
 }
 blockquote {
     margin: 30px 0 30px;
