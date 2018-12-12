@@ -12,7 +12,7 @@ $( document ).ready(function() {
     "img/bon.jpg",
     "img/poo.jpg",
     "img/day12.JPG",
-    "",
+    "img/day13.jpg",
     "",
     "",
     "",
