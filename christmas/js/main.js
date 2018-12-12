@@ -11,7 +11,7 @@ $( document ).ready(function() {
     "img/day9.jpg",
     "img/bon.jpg",
     "img/poo.jpg",
-    "img/day12.jpg",
+    "img/day12.JPG",
     "",
     "",
     "",
