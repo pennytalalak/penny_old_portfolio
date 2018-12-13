@@ -13,7 +13,7 @@ $( document ).ready(function() {
     "img/poo.jpg",
     "img/day12.JPG",
     "img/day13.jpg",
-    "",
+    "img/day14.JPG",
     "",
     "",
     "",
