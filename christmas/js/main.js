@@ -18,7 +18,7 @@ $( document ).ready(function() {
     "img/day16.jpg",
     "img/smoke.png",
     "img/dw.jpg",
-    "",
+    "img/map.png",
     "",
     "",
     "",
